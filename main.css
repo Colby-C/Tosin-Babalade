@@ -140,8 +140,8 @@ img {
     height: auto;
     display: block;
     position: absolute;
-    left: 0;
-    top: -120px;
+    left: -50px;
+    top: -90px;
 }
 
 .image-text {
@@ -263,6 +263,31 @@ textarea {
     min-height: 100vh;
 }
 
+@media screen and (max-width: 1050px) {
+
+    .image-text {
+        font-size: 3vw;
+        bottom: 40%;
+    }
+
+    .athlete-photo {
+        top: 30%;
+        left: 40%;
+        transform: translate(-50%) scale(3);
+    }
+
+    .image-container {
+        height: 115vh;
+        top: -45%;
+        margin-bottom: -315px;
+    }
+
+    .image-container::before {
+        height: 85vh;
+    }
+
+}
+
 @media screen and (max-width: 700px) {
     .menu {
         padding: 5px 10px;
@@ -303,8 +328,8 @@ textarea {
         object-fit: cover;
         object-position: top;
         top: 55%;
-        left: 50%;
-        transform: translate(-50%) scale(3);
+        left: 40%;
+        transform: translate(-50%) scale(4.5);
     }
 
     .shop-section,
